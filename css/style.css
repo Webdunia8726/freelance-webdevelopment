@@ -14464,3 +14464,74 @@ Sidebar
           font-size: 1.8rem;
         }
       }
+
+
+      /* Prevent Horizontal Overflow */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide any horizontal overflow */
+  }
+
+
+  /* Carousel Container Styling */
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #000; /* Black background */
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  /* Carousel Text Styling */
+  .carousel-text-wrapper {
+    display: flex;
+    animation: carousel 10s linear infinite;
+  }
+
+  .carousel-text {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-right: 20px; /* Space between texts */
+    color: white;
+  }
+
+  /* Keyframes for sliding carousel effect */
+  @keyframes carousel {
+    0% {
+      transform: translateX(100%); /* Start from right */
+    }
+    50% {
+      transform: translateX(0); /* Center the text */
+    }
+    100% {
+      transform: translateX(-100%); /* Move out to the left */
+    }
+  }
+
+  /* Responsive Design Adjustments */
+  @media (max-width: 1200px) {
+    .carousel-text {
+      font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .carousel-text {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .carousel-text {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .carousel-text {
+      font-size: 1.2rem;
+    }
+  }
