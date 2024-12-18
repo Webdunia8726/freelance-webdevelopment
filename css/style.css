@@ -14253,6 +14253,8 @@ Sidebar
     margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Optional: Adds a subtle bottom border */
     
    }
   
@@ -14304,3 +14306,161 @@ Sidebar
         font-size: 0.9rem; /* Slightly smaller button text */
       }
     }
+
+
+    /* animation modification start ==================================================================== */
+ /* Banner Styling */
+ .payment-banner {
+    background: #000; /* Black background */
+    background: linear-gradient(90deg, #cc0658, #013b18, #42aaff, #6a11cb, #674fc0); /* Gradient background */
+    background-size: 300%;
+    animation: wave-flow 6s linear infinite; /* Apply the animation to the background */
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px;
+    text-align: center;
+    color:white; /* White text color */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  /* Tagline Styling (No animation, static highlight) */
+  .tagline {
+    font-size: 4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white; /* Static highlighted color */
+    margin: 0;
+    text-align: center;
+  }
+
+  .tagline i {
+    margin: 0 10px;
+    color: #fff; /* White color for icons */
+  }
+
+  /* Subtext Styling */
+  .subtext {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #ddd; /* Slightly lighter color for subtext */
+  }
+
+  .subtext i {
+    color: #ff758c;
+    margin-right: 10px;
+  }
+
+  /* Keyframes for Wave-Like Animation (for the background) */
+  @keyframes wave-flow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }
+
+  /* Responsive Design Adjustments */
+  @media (max-width: 1200px) {
+    .tagline {
+      font-size: 3.5rem;
+    }
+    .subtext {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .tagline {
+      font-size: 3rem;
+    }
+    .subtext {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tagline {
+      font-size: 2.5rem;
+    }
+    .subtext {
+      font-size: 1.1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .tagline {
+      font-size: 2rem;
+    }
+    .subtext {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .tagline {
+      font-size: 1.8rem;
+    }
+    .subtext {
+      font-size: 0.9rem;
+    }
+  }
+  
+      /* hero animation */
+      /* Tagline with Wave Animation */
+    /* Tagline with Wave Animation */
+    .wave-text {
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        background: linear-gradient(90deg, #ff7eb3, #ff758c, #42aaff, #6a11cb, #ff7eb3);
+        background-size: 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: wave-flow 6s linear infinite;
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for highlighting */
+          word-spacing: 8px; /* Increase space between words */
+
+      }
+  
+      /* Keyframes for Wave-Like Animation */
+      @keyframes wave-flow {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 200% 50%;
+        }
+      }
+  
+      /* Responsive Design Adjustments */
+      @media (max-width: 1200px) {
+        .wave-text {
+          font-size: 3.5rem;
+        }
+      }
+  
+      @media (max-width: 992px) {
+        .wave-text {
+          font-size: 3rem;
+        }
+      }
+  
+      @media (max-width: 768px) {
+        .wave-text {
+          font-size: 2.5rem;
+        }
+      }
+  
+      @media (max-width: 576px) {
+        .wave-text {
+          font-size: 2rem;
+        }
+      }
+  
+      @media (max-width: 400px) {
+        .wave-text {
+          font-size: 1.8rem;
+        }
+      }
