@@ -30837,7 +30837,6 @@ START: Theme FAQ CSS
 .offer-card {
     
     background: linear-gradient(135deg, #02192e, #001b34);
-    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     color: #fff;
     text-align: center;
@@ -30935,6 +30934,14 @@ START: Theme FAQ CSS
         flex-direction: column;
         gap: 15px;
     }
+    
+}
+
+@media (max-width: 800px) {
+   .offer-card{
+    display: none;
+   }
+    
 }
 
 
