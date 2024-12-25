@@ -30831,3 +30831,108 @@ START: Theme FAQ CSS
 .fab, .fas {
     font-size: 30px; /* Slightly bigger icon */
 }
+
+
+
+.offer-card {
+    
+    background: linear-gradient(135deg, #02192e, #001b34);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.offer-card h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.offer-card p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.offer-card ul {
+    text-align: left;
+    margin: 10px 20px;
+    line-height: 1.8;
+    padding-left: 0;
+}
+
+.offer-card ul li {
+    list-style: none;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.offer-card ul li i {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+.countdown-container {
+    margin-top: 20px;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.time-box {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.time-box span {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.time-box small {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.ctabutton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    background: #5254eb;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.ctabutton:hover {
+    background: #c22c07;
+    color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+.ctabutton i {
+    margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+    .countdown-timer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

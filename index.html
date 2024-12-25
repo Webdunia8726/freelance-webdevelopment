@@ -275,8 +275,51 @@
         </section>
         <!-- end: Hero Area -->
 
-
-        <img src="herobanner-alwaysupdate.png" alt="" class="img-fluid">
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="offer-card">
+                <h1 class="text-white">Your Dream Website, Just a Click Away!</h1>
+                <p><strong>🔥 Flat 50% OFF 🔥</strong></p>
+                <p>Get a <span style="color: green; font-size:25px; font-weight: 600;"><strike>₹10,000</strike></span> item for just ₹5,000!</p>
+                <h4 class="text-white">Including:</h4>
+                <ul>
+                    <li><i class="fas fa-check"></i>5-Page Professional Website</li>
+                    <li><i class="fas fa-check"></i>Hosting Worth ₹5,000 Absolutely FREE!</li>
+                    <li><i class="fas fa-check"></i>Domain Worth ₹1,000 for FREE!</li>
+                    <li><i class="fas fa-check"></i>GET FREE GOOGLE ADS MANAGEMENT</li>
+                    <li><i class="fas fa-check"></i>Lead Generation Form</li>
+                    <li><i class="fas fa-check"></i>SEO Optimization</li>
+                    <li><i class="fas fa-check"></i>Free Logo</li>
+                    <li><i class="fas fa-check"></i>Social Media Integration</li>
+                    <li><i class="fas fa-check"></i>High-speed Servers</li>
+                    <li><i class="fas fa-check"></i>24/7 Support</li>
+                </ul>
+                <div class="countdown-container">
+                    <h4 class="text-white">Offer Ends In:</h4>
+                    <div class="countdown-timer">
+                        <div class="time-box">
+                            <span id="days">00</span>
+                            <small>Days</small>
+                        </div>
+                        <div class="time-box">
+                            <span id="hours">00</span>
+                            <small>Hours</small>
+                        </div>
+                        <div class="time-box">
+                            <span id="minutes">00</span>
+                            <small>Minutes</small>
+                        </div>
+                        <div class="time-box">
+                            <span id="seconds">00</span>
+                            <small>Seconds</small>
+                        </div>
+                    </div>
+                </div>
+                <a href="tel:" class="ctabutton">
+                    <i class="fas fa-mouse-pointer"></i> Grab This Deal
+                </a>
+            </div>
+        </div>
+        <!-- <img src="herobanner-alwaysupdate.png" alt="" class="img-fluid"> -->
         <!-- start: About Area -->
         <section class="tj-about-section-two" id="aboutus">
             <div class="container">
@@ -463,10 +506,10 @@
                                     <div class="desc">
                                         <p>
                                             Unlock your brand's potential with our digital marketing services. We specialize in SEO, PPC campaigns, and social media management to ensure your business stands out online and attracts the right customers.                                    </div>
-                                    <div class="service-tags">
+                                    <!-- <div class="service-tags">
                                         <span class="btn text-btn">Creative</span>
                                         <span class="btn text-btn">Accessibility</span>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="service-arrow">
                                     <a href="service-details.html"><i class="flaticon-next"></i></a>
@@ -496,10 +539,10 @@
                                         <p>
                                             Get professional web development services to create a powerful online presence. From custom website design to responsive web development, we ensure your website is fast, secure, and SEO-friendly. Contact us now for a free consultation!                                        </p>
                                     </div>
-                                    <div class="service-tags">
+                                    <!-- <div class="service-tags">
                                         <span class="btn text-btn">Creative</span>
                                         <span class="btn text-btn">Accessibility</span>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="service-arrow">
                                     <a href="service-details.html"><i class="flaticon-next"></i></a>
@@ -529,10 +572,10 @@
                                         <p>
                                             Enhance your brand's visibility with expert SEO and branding services. We help improve search engine rankings, build your brand identity, and drive more targeted traffic to your website. Start today with results-driven strategies!                                        </p>
                                     </div>
-                                    <div class="service-tags">
+                                    <!-- <div class="service-tags">
                                         <span class="btn text-btn">Creative</span>
                                         <span class="btn text-btn">Accessibility</span>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="service-arrow">
                                     <a href="service-details.html"><i class="flaticon-next"></i></a>
@@ -562,10 +605,10 @@
                                         <p>
                                             Create high-converting landing pages designed to boost your sales and leads. Our optimized landing page design services ensure faster load times, mobile responsiveness, and compelling CTAs to drive better ROI. Start improving your conversions today!                                        </p>
                                     </div>
-                                    <div class="service-tags">
+                                    <!-- <div class="service-tags">
                                         <span class="btn text-btn">Creative</span>
                                         <span class="btn text-btn">Accessibility</span>
-                                    </div>
+                                    </div> -->
                                 </div>
                                 <div class="service-arrow">
                                     <a href="service-details.html"><i class="flaticon-next"></i></a>
@@ -1596,5 +1639,27 @@
       <script src="assets/js/isotope.pkgd.min.js"></script>
       <script src="assets/js/validate.min.js"></script>
       <script src="assets/js/main.js"></script>
+
+      <script> const countdownDate = new Date("December 31, 2024 23:59:59").getTime();
+        const interval = setInterval(() => {
+            const now = new Date().getTime();
+            const timeLeft = countdownDate - now;
+
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            document.getElementById("days").textContent = days;
+            document.getElementById("hours").textContent = hours;
+            document.getElementById("minutes").textContent = minutes;
+            document.getElementById("seconds").textContent = seconds;
+
+            if (timeLeft < 0) {
+                clearInterval(interval);
+                document.querySelector(".countdown-container").innerHTML = "<h2>Offer Expired!</h2>";
+            }
+        }, 1000);
+    </script></script>
    </body>
 </html>
