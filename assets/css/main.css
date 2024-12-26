@@ -30836,11 +30836,12 @@ START: Theme FAQ CSS
 
 .offer-card {
     
-    background: linear-gradient(135deg, #02192e, #001b34);
+    background: linear-gradient(135deg, #4d47d7, #001b34);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     color: #fff;
     text-align: center;
     padding: 20px;
+    border:5px solid black;
 }
 
 .offer-card h1 {
