@@ -3767,18 +3767,18 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .hero-content-area {
-    padding-top: 285px;
+    padding-top: 200px;
     padding-bottom: 90px;
     max-width: 760px;
     position: relative;
     z-index: 3;
-}
+} 
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (min-width: 576px) and (max-width: 767px),
 (max-width: 575px) {
     .hero-content-area {
-        padding-top: 260px;
+        padding-top: 120px !important;
         padding-bottom: 30px;
     }
 }
