@@ -30836,9 +30836,9 @@ START: Theme FAQ CSS
 
 .offer-card {
     
-    background: linear-gradient(135deg, #4d47d7, #001b34);
+    /* background: linear-gradient(135deg, #4d47d7, #001b34); */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    color: #fff;
+    /* color: #fff; */
     text-align: center;
     padding: 20px;
     border:5px solid black;
@@ -30870,7 +30870,7 @@ START: Theme FAQ CSS
 }
 
 .offer-card ul li i {
-    color: #fff;
+    /* color: #fff; */
     margin-right: 10px;
     font-size: 1.2rem;
 }
@@ -30942,3 +30942,36 @@ START: Theme FAQ CSS
 
 
 /* hello i want update */
+
+
+
+.feature-list i {
+    color: #24CFA7;
+    margin-right: 10px;
+  }
+  .feature-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border: 3px solid  #4D47D7;
+    margin-top: 20px;
+  }
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  .feature-card h4 {
+    color: #343a40;
+    margin-bottom: 15px;
+  }
+  .feature-card ul {
+    padding-left: 0;
+    list-style: none;
+  }
+  .feature-card ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+  }
