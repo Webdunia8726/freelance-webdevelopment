@@ -30975,3 +30975,7 @@ START: Theme FAQ CSS
     color: black;
     font-weight: 600;
   }
+
+  .feature-list .fas{
+    font-size: 22px !important;
+  }
